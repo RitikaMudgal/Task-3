@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Money Tracker</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Money Tracker</h1>
+
+        <div id="transaction-form">
+            <label for="description">Description:</label>
+            <input type="text" id="description" required>
+            
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" required>
+
+            <label for="type">Type:</label>
+            <select id="type">
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+
+            <button onclick="addTransaction()">Add Transaction</button>
+        </div>
+
+        <div id="transaction-list">
+            <!-- Transaction list will be displayed here -->
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
